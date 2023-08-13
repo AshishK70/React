@@ -1,2 +1,1 @@
-First Github Commit
-not try second commit 
+We will build from scratch and learn react to expert levels on a daily basis
