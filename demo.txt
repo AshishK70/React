@@ -1,1 +1,3 @@
 We will build from scratch and learn react to expert levels on a daily basis
+
+Now lets create our very first folder which we will use to build first react app.
