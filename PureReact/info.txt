@@ -1,0 +1,8 @@
+React - 
+
+1. Based on Components
+2. Declerative
+3. State Driven
+4. JavaScript Library
+5. Popular
+6. Created by Facebook (Jordan Walke in 2011)
