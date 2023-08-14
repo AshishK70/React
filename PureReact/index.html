@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>First React App</title>
+    <!-- this link is for interface of react such as components -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <!-- this is used for rendering react app -->
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<style>
+    * {
+        margin: 5px;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #000;
+        color: #dfdfdf;
+    }
+</style>
+
+<body>
+    <h1>First React App</h1>
+    <p>working clock</p>
+    <div id="root"></div>
+    <script type="text/babel">
+        function App() {
+            // const time = new Date().toLocaleTimeString();
+            const [time, setTime] = React.useState(new Date().toLocaleTimeString());
+
+            React.useEffect(function () {
+                setInterval(function () {
+                    setTime(new Date().toLocaleTimeString());
+                }, 1000)
+            }, [])
+            // case-1
+            return React.createElement('header', 'null', `Hello React its, ${time}`);
+        }
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(React.createElement(App));
+
+    </script>
+</body>
+
+</html>
