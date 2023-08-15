@@ -212,3 +212,15 @@ console.log(getTotalReviewCount(book));
 // 1. map
 // 2. filter
 // 3. reduce
+
+// Map arrow function
+// Example 1
+const x = [1, 2, 3, 4, 5].map((el) => el * 2);
+console.log(x);
+
+const books = getBooks();
+books;
+
+// Example 2
+const titles = books.map((book) => book.title);
+console.log(titles);
