@@ -144,6 +144,24 @@ function getBook(id) {
 }
 
 // destructuring
+// for all the books
+const books = getBooks(1);
+// books;
 
-const book = getBook(3);
+// for single book
+const book = getBook(1);
 book;
+
+// getting title of a single book
+const title1 = book.title;
+title1;
+
+// destructuring with object method
+const { title, author, pages, publicationDate, genres, hasMovieAdaptation } = book;
+console.log(author + " wrote " + title, genres);
+
+// destructuring with array method
+const [primaryGenre, secondaryGenre, ...othergenre] = genres;
+console.log(primaryGenre, secondaryGenre, ...othergenre);
+
+// Rest and Spread Operator
