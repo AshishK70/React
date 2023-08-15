@@ -161,7 +161,21 @@ const { title, author, pages, publicationDate, genres, hasMovieAdaptation } = bo
 console.log(author + " wrote " + title, genres);
 
 // destructuring with array method
+// const [primaryGenre, secondaryGenre, ...othergenre] = genres;
+// console.log(primaryGenre, secondaryGenre, ...othergenre);
+
+// Rest Operator (which is placed at the end like shown below)
 const [primaryGenre, secondaryGenre, ...othergenre] = genres;
 console.log(primaryGenre, secondaryGenre, ...othergenre);
 
-// Rest and Spread Operator
+// Spread Operator in array method to a new genre as shown below
+const newGenre = [...genres, 'Flashpoint'];
+newGenre;
+
+// Spread Operator in objects method to a new property as shown below
+const updatedBook = {
+    ...book,
+    moviePublicationDate: '2023-08-15',  //adding a new property in this line
+    pages: 1024  //updating number of pages in this line by overwriting previous value
+}
+updatedBook;
