@@ -143,3 +143,6 @@ function getBooks() {
 function getBooks(id) {
     return data.find((d) => d.id === id);
 }
+
+const books = getBooks();
+books;
