@@ -179,3 +179,8 @@ const updatedBook = {
     pages: 1024  //updating number of pages in this line by overwriting previous value
 }
 updatedBook;
+
+
+// Template literals ( ES6 feature) 
+const summary = `a book added by template literal  showing ${title} written by ${author} published in ${publicationDate.split('-')[0]} with total ${pages} pages`;
+summary;
