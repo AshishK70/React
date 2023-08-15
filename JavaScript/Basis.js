@@ -142,7 +142,7 @@ function getBooks() {
 function getBook(id) {
     return data.find((d) => d.id === id);
 }
-
+/*
 // destructuring
 // for all the books
 const books = getBooks(1);
@@ -180,13 +180,13 @@ const updatedBook = {
 }
 updatedBook;
 
-// Arrow functions 
+// Arrow functions
 // function getYear(str) {
 //     return str.split('-')[0];   //arrow function here
 // };
 const getYear = (str) => str.split('-')[0];
 console.log(getYear(publicationDate));
-// Template literals ( ES6 feature) 
+// Template literals ( ES6 feature)
 const summary = `a book added by template literal  showing ${title} written by ${author} published in ${getYear(publicationDate)} with total ${pages} pages. The book have ${hasMovieAdaptation ? '' : 'no'} movie adaptation`;
 summary;
 
@@ -205,4 +205,10 @@ function getTotalReviewCount(book) {
     return goodreads + librarything;
 }
 console.log(getTotalReviewCount(book));
+*/
 
+
+// Array methods 
+// 1. map
+// 2. filter
+// 3. reduce
