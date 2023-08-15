@@ -139,10 +139,11 @@ function getBooks() {
     return data;
 }
 
-
-function getBooks(id) {
+function getBook(id) {
     return data.find((d) => d.id === id);
 }
 
-const books = getBooks();
-books;
+// destructuring
+
+const book = getBook(3);
+book;
