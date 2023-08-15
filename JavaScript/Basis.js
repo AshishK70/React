@@ -215,19 +215,35 @@ console.log(getTotalReviewCount(book));
 
 // Map arrow function
 // Example 1
-const x = [1, 2, 3, 4, 5].map((el) => el * 2);
-console.log(x);
+// const x = [1, 2, 3, 4, 5].map((el) => el * 2);
+// console.log(x);
 
-const books = getBooks();
-books;
+// const books = getBooks();
+// books;
 
-// Example 2  --> getting title of the book
-const titles = books.map((book) => book.title);
-console.log(titles);
+// // Example 2  --> getting title of the book
+// const titles = books.map((book) => book.title);
+// console.log(titles);
 
-// Example 3 --> getting many data at once from the book
-const essentialData = books.map((book) => ({
-    title: book.title,
-    authorName: book.author
-}));
-console.log(essentialData);
+// // Example 3 --> getting many data at once from the book
+// const essentialData = books.map((book) => ({
+//     title: book.title,
+//     authorName: book.author
+// }));
+// console.log(essentialData);
+
+// Asynchronous Javascript: Promises
+// fetch('https://jsonplaceholder.typicode.com/todos')
+//     .then(res => res.json())
+//     .then(data => console.log(data));
+
+
+// Async/Await function method
+async function fetchTodos() {
+    const res = await fetch('https://jsonplaceholder.typicode.com/todos');
+    const data = await res.json();
+    console.log(data);
+    console.log("Await method");
+}
+console.log("promise method");
+fetchTodos();
