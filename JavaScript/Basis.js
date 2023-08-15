@@ -198,6 +198,11 @@ const pagesCount = pages > 900 ? "over 900" : 'below 900';
 pagesCount;
 console.log(`this book have ${pagesCount} pages `);
 
-
-
+// Optional Chaining method
+function getTotalReviewCount(book) {
+    const goodreads = book.reviews?.goodreads?.reviewsCount;  //first ? is used for optional chaining if we are not sure if value exists
+    const librarything = book.reviews?.librarything?.reviewsCount;
+    return goodreads + librarything;
+}
+console.log(getTotalReviewCount(book));
 
