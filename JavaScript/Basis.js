@@ -221,6 +221,13 @@ console.log(x);
 const books = getBooks();
 books;
 
-// Example 2
+// Example 2  --> getting title of the book
 const titles = books.map((book) => book.title);
 console.log(titles);
+
+// Example 3 --> getting many data at once from the book
+const essentialData = books.map((book) => ({
+    title: book.title,
+    authorName: book.author
+}));
+console.log(essentialData);
