@@ -180,7 +180,24 @@ const updatedBook = {
 }
 updatedBook;
 
-
+// Arrow functions 
+// function getYear(str) {
+//     return str.split('-')[0];   //arrow function here
+// };
+const getYear = (str) => str.split('-')[0];
+console.log(getYear(publicationDate));
 // Template literals ( ES6 feature) 
-const summary = `a book added by template literal  showing ${title} written by ${author} published in ${publicationDate.split('-')[0]} with total ${pages} pages`;
+const summary = `a book added by template literal  showing ${title} written by ${author} published in ${getYear(publicationDate)} with total ${pages} pages. The book have ${hasMovieAdaptation ? '' : 'no'} movie adaptation`;
 summary;
+
+// Ternary Operator ( instead of using if and else ) (three steps/syntax for ternary operator) (example shown below)
+// 1--> Condition
+// 2--> Statement if Condition is true
+// 3--> Statement if Condition is false
+const pagesCount = pages > 900 ? "over 900" : 'below 900';
+pagesCount;
+console.log(`this book have ${pagesCount} pages `);
+
+
+
+
