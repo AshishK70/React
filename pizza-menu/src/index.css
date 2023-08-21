@@ -12,9 +12,9 @@ html {
 
 body {
   font-family: 'Roboto Mono', sans-serif;
-  color: #dfdfdf;
+  color: #000;
   font-weight: 400;
-  background-color: #000;
+  background-color: #d4c2c2;
   border-bottom: 1.6rem solid #edc84b;
   min-height: 100vh;
   padding: 3.2rem;
