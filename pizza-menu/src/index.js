@@ -75,10 +75,11 @@ function App() {
 
 function Pizza() {
   return (
-    <div>
+    <div className='pizzas'>
       <img src='pizzas/spinaci.jpg' alt='Pizza-Spinachi'></img>
-      <h2>Pizza Spinachi</h2>
+      <h3>Pizza Spinachi</h3>
       <p>Tomato, mozarella, spinach, and ricotta cheese</p>
+      <span>12</span>
     </div>
   )
 }
