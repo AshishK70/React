@@ -85,6 +85,19 @@ function Menu() {
     </div>
   )
 }
+
+function Pizza() {
+  return (
+    <div>
+      <img src='pizzas/spinaci.jpg' alt='Pizza-Spinachi'></img>
+      <h3>Pizza Spinachi</h3>
+      <p>Tomato, mozarella, spinach, and ricotta cheese</p>
+      <span>12</span>
+    </div>
+  )
+}
+
+
 function Footer() {
   const hour = new Date().getHours();
   console.log(hour);
@@ -104,14 +117,4 @@ function Footer() {
   )
 }
 
-function Pizza() {
-  return (
-    <div>
-      <img src='pizzas/spinaci.jpg' alt='Pizza-Spinachi'></img>
-      <h3>Pizza Spinachi</h3>
-      <p>Tomato, mozarella, spinach, and ricotta cheese</p>
-      <span>12</span>
-    </div>
-  )
-}
 
