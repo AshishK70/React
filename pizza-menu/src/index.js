@@ -58,7 +58,7 @@ root.render(
 
 function App() {
   return (
-    <div>
+    <div className='container'>
       <Header />
       <Menu />
       <Footer />
@@ -68,21 +68,21 @@ function App() {
 
 function Header() {
   return (
-    <div className='header'>
-      <h1 className='header' >Pizza Factory</h1>
-    </div>
+    <header className='header'>
+      <h1>Pizza Factory</h1>
+    </header>
   )
 }
 
 function Menu() {
   return (
-    <div>
+    <main className='menu'>
       <h2>Our Menu</h2>
       <Pizza />
       <Pizza />
       <Pizza />
       <Pizza />
-    </div>
+    </main>
   )
 }
 
