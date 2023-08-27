@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 
-:root {
-  --background: #e78f8e;
-  --font: #ece2d0;
-  --text: #8b8bae;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -18,10 +12,10 @@ html {
 
 body {
   font-family: 'Roboto Mono', sans-serif;
-  color: var(--background);
+  color: #000;
   font-weight: 400;
-  background-color: var(--font);
-  border-bottom: 3rem solid var(--text);
+  background-color: #45719d;
+  border-bottom: 1.6rem solid #000;
   min-height: 100vh;
   padding: 3.2rem;
   padding-bottom: 6rem;
@@ -44,7 +38,7 @@ body {
 
 .header h1 {
   /* Non-accessible color */
-  color: var(--text);
+  color: #000;
 
   text-transform: uppercase;
   text-align: center;
@@ -118,6 +112,7 @@ body {
   width: 12rem;
   aspect-ratio: 1;
   align-self: start;
+  box-shadow: 5px 5px 10px #000;
 }
 
 .pizza div {

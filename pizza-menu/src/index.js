@@ -69,7 +69,7 @@ function App() {
 function Header() {
   return (
     <div className='header'>
-      <h1 className='header'>Pizza Factory</h1>
+      <h1 className='header' >Pizza Factory</h1>
     </div>
   )
 }
