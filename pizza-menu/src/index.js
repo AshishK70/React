@@ -59,23 +59,54 @@ root.render(
 function App() {
   return (
     <div>
-      {/* <Header /> */}
-      <Pizza />
+      <Header />
+      <Menu />
+      <Footer />
     </div>
   )
 }
 
-// function Header() {
-//   return (
-//     <div>
-//       <h1 className='header'>FlashPoint Bagpack</h1>
-//     </div>
-//   )
-// }
+function Header() {
+  return (
+    <div className='header'>
+      <h1 className='header'>Pizza Factory</h1>
+    </div>
+  )
+}
+
+function Menu() {
+  return (
+    <div>
+      <h2>Our Menu</h2>
+      <Pizza />
+      <Pizza />
+      <Pizza />
+      <Pizza />
+    </div>
+  )
+}
+function Footer() {
+  const hour = new Date().getHours();
+  // console.log(hour);
+  const openHour = 12;
+  const closeHour = 22;
+  const isOpen = hour >= openHour && hour <= closeHour;
+  console.log(isOpen);
+  // if (hour >= openHour && hour <= closeHour) {
+  //   alert("we're currently open")
+  // } else {
+  //   alert("we're currently closed")
+  // }
+  return (
+    <footer>
+      <h2>It's {new Date().toLocaleTimeString()} We're open </h2>
+    </footer>
+  )
+}
 
 function Pizza() {
   return (
-    <div className='pizzas'>
+    <div>
       <img src='pizzas/spinaci.jpg' alt='Pizza-Spinachi'></img>
       <h3>Pizza Spinachi</h3>
       <p>Tomato, mozarella, spinach, and ricotta cheese</p>
