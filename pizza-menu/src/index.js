@@ -85,7 +85,7 @@ function Menu() {
 }
 
 function Pizza(props) {
-  console.log(props)
+  console.log(props);
   return (
     <div className='pizza'>
       <img src={props.photoName} alt={props.name}></img>
